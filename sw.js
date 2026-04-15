@@ -1,9 +1,3 @@
-//Basic
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js');
-}
-
-/*
 const CACHE_NAME = "min-pwa-v1";
 const ASSETS = [
   "./",
@@ -37,4 +31,3 @@ self.addEventListener("fetch", (event) =>
     caches.match(event.request).then((cached) => cached || fetch(event.request))
   );
 });
-*/

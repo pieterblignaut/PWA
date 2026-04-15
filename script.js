@@ -6,7 +6,6 @@ document.getElementById("ping").addEventListener("click", () =>
     outEl.textContent = "Pong @ " + new Date().toLocaleTimeString();
 });
 
-/*
 if ("serviceWorker" in navigator)
 {
     window.addEventListener("load", async () =>
@@ -26,4 +25,3 @@ else
 {
     statusEl.textContent = "Service workers not supported in this browser.";
 }
-*/
