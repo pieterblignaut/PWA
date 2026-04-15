@@ -1,0 +1,18 @@
+body {
+    font-family: system-ui, Arial;
+    margin: 2rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 520px;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

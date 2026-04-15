@@ -6,28 +6,8 @@
     <title>Minimal PWA</title>
 
     <link rel="manifest" href="./manifest.json" />
-    <meta name="theme-color" content="#0d6efd" />
-
-    <style>
-      body {
-        font-family: system-ui, Arial;
-        margin: 2rem;
-      }
-
-      .card {
-        border: 1px solid #ddd;
-        padding: 1rem;
-        border-radius: 12px;
-        max-width: 520px;
-      }
-
-      button {
-        padding: 0.6rem 1rem;
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        cursor: pointer;
-      }
-    </style>
+    <!-- <meta name="theme-color" content="#0d6efd" /> -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -38,35 +18,6 @@
       <p id="out"></p>
     </div>
 
-    <!-- prettier-ignore -->
-    <script>
-      const statusEl = document.getElementById("status");
-      const outEl = document.getElementById("out");
-
-      document.getElementById("ping").addEventListener("click", () =>
-      {
-        outEl.textContent = "Pong @ " + new Date().toLocaleTimeString();
-      });
-
-      if ("serviceWorker" in navigator)
-      {
-        window.addEventListener("load", async () =>
-        {
-          try
-          {
-            const reg = await navigator.serviceWorker.register("./sw.js");
-            statusEl.textContent = "Service worker registered: " + reg.scope;
-          }
-          catch (e)
-          {
-            statusEl.textContent = "SW registration failed: " + e;
-          }
-        });
-      }
-      else
-      {
-        statusEl.textContent = "Service workers not supported in this browser.";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
