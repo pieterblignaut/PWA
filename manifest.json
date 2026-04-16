@@ -1,9 +1,7 @@
 {
     "name": "Minimal PWA",
     "short_name": "MinPWA",
-    "start_url": ".",
-    "start_url_1": "/",
-    "start_url_2": "./",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#0d6efd",
