@@ -6,6 +6,13 @@ document.getElementById("ping").addEventListener("click", () =>
     outEl.textContent = "Pong @ " + new Date().toLocaleTimeString();
 });
 
+//Basic
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/sw.js');
+// }
+
+//Register with feedback
+
 if ("serviceWorker" in navigator)
 {
     window.addEventListener("load", async () =>
